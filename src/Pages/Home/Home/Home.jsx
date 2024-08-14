@@ -2,7 +2,7 @@
 const Home = () => {
     return (
         <div>
-            <button className="btn btn-secondary">Secondary</button>
+            <p>This is home</p>
         </div>
     );
 };
