@@ -2,12 +2,12 @@ import loginImg from '../../assets/login-register.svg'
 
 const Login = () => {
     return (
-        <div className="hero bg-base-200 min-h-[calc(100vh-68px)]">
+        <div className="hero min-h-[calc(100vh-68px)]">
             <div className="hero-content flex-col lg:flex-row justify-around">
-                <div className="text-center lg:text-left base:w-full lg:w-1/2">
+                <div className="base:w-full lg:w-1/2">
                     <img src={loginImg} alt="login image" className='w-[80%] mx-auto' />
                 </div>
-                <div className="card bg-base-100 base:w-full max-w-lg shrink-0 shadow-base rounded-none lg:w-1/2">
+                <div className="card bg-base-100 sm:w-full lg:w-1/2 shrink-0 shadow-md rounded-none">
                     <h1 className="text-2xl font-bold px-8 pt-8">Login now!</h1>
                     <form className="card-body">
                         <div className="form-control">

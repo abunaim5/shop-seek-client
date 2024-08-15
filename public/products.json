@@ -1,0 +1,335 @@
+[
+    {
+      "name": "Wireless Headphones",
+      "image": "https://i.postimg.cc/rm97s59B/1.png",
+      "description": "Noise-cancelling wireless headphones with long battery life.",
+      "price": 99.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "createdAt": "2024-08-01T10:45:00"
+    },
+    {
+      "name": "Organic Cotton T-shirt",
+      "image": "https://i.postimg.cc/q7yPfP6M/2.png",
+      "description": "Eco-friendly T-shirt made from 100% organic cotton.",
+      "price": 19.99,
+      "category": "Clothing",
+      "ratings": 4.2,
+      "createdAt": "2024-07-29T08:30:00"
+    },
+    {
+      "name": "Smartphone",
+      "image": "https://i.postimg.cc/QdR2y8ty/3.png",
+      "description": "Latest model with 128GB storage and triple camera.",
+      "price": 599.99,
+      "category": "Electronics",
+      "ratings": 4.7,
+      "createdAt": "2024-08-02T12:00:00"
+    },
+    {
+      "name": "Running Shoes",
+      "image": "https://i.postimg.cc/Ss4wmgcL/4.png",
+      "description": "Lightweight running shoes with excellent grip and comfort.",
+      "price": 49.99,
+      "category": "Footwear",
+      "ratings": 4.3,
+      "createdAt": "2024-07-25T09:10:00"
+    },
+    {
+      "name": "Blender",
+      "image": "https://i.postimg.cc/SNRHQ2YP/5.png",
+      "description": "High-speed blender perfect for smoothies and soups.",
+      "price": 29.99,
+      "category": "Home Appliances",
+      "ratings": 4.0,
+      "createdAt": "2024-08-03T14:20:00"
+    },
+    {
+      "name": "Desk Lamp",
+      "image": "https://i.postimg.cc/YqPZvr1C/6.png",
+      "description": "Adjustable LED desk lamp with touch control and brightness settings.",
+      "price": 24.99,
+      "category": "Home Decor",
+      "ratings": 4.6,
+      "createdAt": "2024-07-28T16:45:00"
+    },
+    {
+      "name": "Yoga Mat",
+      "image": "https://example.com/images/yoga-mat.jpg",
+      "description": "Non-slip yoga mat with extra cushioning for comfort.",
+      "price": 14.99,
+      "category": "Fitness",
+      "ratings": 4.8,
+      "createdAt": "2024-08-01T07:50:00"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "image": "https://example.com/images/bluetooth-speaker.jpg",
+      "description": "Portable speaker with powerful sound and waterproof design.",
+      "price": 39.99,
+      "category": "Electronics",
+      "ratings": 4.4,
+      "createdAt": "2024-07-30T18:30:00"
+    },
+    {
+      "name": "Leather Wallet",
+      "image": "https://example.com/images/leather-wallet.jpg",
+      "description": "Premium leather wallet with multiple card slots and a coin pocket.",
+      "price": 34.99,
+      "category": "Accessories",
+      "ratings": 4.3,
+      "createdAt": "2024-07-24T12:15:00"
+    },
+    {
+      "name": "Gaming Chair",
+      "image": "https://example.com/images/gaming-chair.jpg",
+      "description": "Ergonomic gaming chair with adjustable armrests and lumbar support.",
+      "price": 149.99,
+      "category": "Furniture",
+      "ratings": 4.7,
+      "createdAt": "2024-08-05T11:00:00"
+    },
+    {
+      "name": "Coffee Maker",
+      "image": "https://example.com/images/coffee-maker.jpg",
+      "description": "Single-serve coffee maker with customizable brew strength.",
+      "price": 59.99,
+      "category": "Kitchen Appliances",
+      "ratings": 4.5,
+      "createdAt": "2024-08-04T08:10:00"
+    },
+    {
+      "name": "Fitness Tracker",
+      "image": "https://example.com/images/fitness-tracker.jpg",
+      "description": "Waterproof fitness tracker with heart rate monitor and GPS.",
+      "price": 79.99,
+      "category": "Fitness",
+      "ratings": 4.1,
+      "createdAt": "2024-07-27T14:50:00"
+    },
+    {
+      "name": "Sunglasses",
+      "image": "https://example.com/images/sunglasses.jpg",
+      "description": "Polarized sunglasses with UV protection for outdoor activities.",
+      "price": 24.99,
+      "category": "Accessories",
+      "ratings": 4.6,
+      "createdAt": "2024-07-22T13:30:00"
+    },
+    {
+      "name": "Air Fryer",
+      "image": "https://example.com/images/air-fryer.jpg",
+      "description": "Oil-free air fryer with adjustable temperature control.",
+      "price": 89.99,
+      "category": "Kitchen Appliances",
+      "ratings": 4.4,
+      "createdAt": "2024-08-02T17:25:00"
+    },
+    {
+      "name": "Graphic T-Shirt",
+      "image": "https://example.com/images/graphic-tshirt.jpg",
+      "description": "Trendy graphic T-shirt with a modern design and soft fabric.",
+      "price": 15.99,
+      "category": "Clothing",
+      "ratings": 4.2,
+      "createdAt": "2024-07-26T09:40:00"
+    },
+    {
+      "name": "Laptop Stand",
+      "image": "https://example.com/images/laptop-stand.jpg",
+      "description": "Adjustable laptop stand with ergonomic design and cooling pad.",
+      "price": 29.99,
+      "category": "Office Supplies",
+      "ratings": 4.5,
+      "createdAt": "2024-07-23T18:55:00"
+    },
+    {
+      "name": "Camping Tent",
+      "image": "https://example.com/images/camping-tent.jpg",
+      "description": "Waterproof camping tent suitable for 2-3 people.",
+      "price": 89.99,
+      "category": "Outdoor",
+      "ratings": 4.6,
+      "createdAt": "2024-07-28T15:20:00"
+    },
+    {
+      "name": "Wireless Mouse",
+      "image": "https://example.com/images/wireless-mouse.jpg",
+      "description": "Ergonomic wireless mouse with silent clicks and adjustable DPI.",
+      "price": 19.99,
+      "category": "Electronics",
+      "ratings": 4.4,
+      "createdAt": "2024-08-06T12:35:00"
+    },
+    {
+      "name": "Notebook",
+      "image": "https://example.com/images/notebook.jpg",
+      "description": "Hardcover notebook with dotted pages, perfect for journaling.",
+      "price": 9.99,
+      "category": "Stationery",
+      "ratings": 4.7,
+      "createdAt": "2024-08-03T09:10:00"
+    },
+    {
+      "name": "Electric Kettle",
+      "image": "https://example.com/images/electric-kettle.jpg",
+      "description": "Fast-boiling electric kettle with auto shut-off feature.",
+      "price": 29.99,
+      "category": "Kitchen Appliances",
+      "ratings": 4.5,
+      "createdAt": "2024-07-31T07:25:00"
+    },
+    {
+      "name": "Casual Sneakers",
+      "image": "https://example.com/images/casual-sneakers.jpg",
+      "description": "Comfortable sneakers perfect for everyday wear.",
+      "price": 44.99,
+      "category": "Footwear",
+      "ratings": 4.2,
+      "createdAt": "2024-08-05T16:45:00"
+    },
+    {
+      "name": "Smartwatch",
+      "image": "https://example.com/images/smartwatch.jpg",
+      "description": "Smartwatch with fitness tracking, heart rate monitor, and notifications.",
+      "price": 129.99,
+      "category": "Electronics",
+      "ratings": 4.8,
+      "createdAt": "2024-07-29T11:20:00"
+    },
+    {
+      "name": "Folding Chair",
+      "image": "https://example.com/images/folding-chair.jpg",
+      "description": "Durable folding chair suitable for outdoor and indoor use.",
+      "price": 34.99,
+      "category": "Furniture",
+      "ratings": 4.1,
+      "createdAt": "2024-07-25T10:55:00"
+    },
+    {
+      "name": "Electric Grill",
+      "image": "https://example.com/images/electric-grill.jpg",
+      "description": "Compact electric grill for indoor cooking.",
+      "price": 59.99,
+      "category": "Kitchen Appliances",
+      "ratings": 4.4,
+      "createdAt": "2024-07-23T13:15:00"
+    },
+    {
+      "name": "Leather Backpack",
+      "image": "https://example.com/images/leather-backpack.jpg",
+      "description": "Stylish leather backpack with multiple compartments.",
+      "price": 89.99,
+      "category": "Accessories",
+      "ratings": 4.6,
+      "createdAt": "2024-07-26T17:40:00"
+    },
+    {
+      "name": "Electric Toothbrush",
+      "image": "https://example.com/images/electric-toothbrush.jpg",
+      "description": "Rechargeable electric toothbrush with multiple cleaning modes.",
+      "price": 49.99,
+      "category": "Health & Personal Care",
+      "ratings": 4.3,
+      "createdAt": "2024-08-02T19:00:00"
+    },
+    {
+      "name": "Wireless Charger",
+      "image": "https://example.com/images/wireless-charger.jpg",
+      "description": "Fast wireless charger compatible with all Qi-enabled devices.",
+      "price": 24.99,
+      "category": "Electronics",
+      "ratings": 4.2,
+      "createdAt": "2024-08-01T16:30:00"
+    },
+    {
+      "name": "Vacuum Cleaner",
+      "image": "https://example.com/images/vacuum-cleaner.jpg",
+      "description": "Powerful cordless vacuum cleaner for home and car.",
+      "price": 129.99,
+      "category": "Home Appliances",
+      "ratings": 4.7,
+      "createdAt": "2024-07-30T08:45:00"
+    },
+    {
+      "name": "Wristwatch",
+      "image": "https://example.com/images/wristwatch.jpg",
+      "description": "Classic wristwatch with a stainless steel band and water resistance.",
+      "price": 69.99,
+      "category": "Accessories",
+      "ratings": 4.5,
+      "createdAt": "2024-07-22T10:20:00"
+    },
+    {
+      "name": "Outdoor Hammock",
+      "image": "https://example.com/images/outdoor-hammock.jpg",
+      "description": "Comfortable outdoor hammock with a sturdy frame.",
+      "price": 59.99,
+      "category": "Outdoor",
+      "ratings": 4.8,
+      "createdAt": "2024-07-28T12:05:00"
+    },
+    {
+      "name": "Leather Belt",
+      "image": "https://example.com/images/leather-belt.jpg",
+      "description": "Genuine leather belt with a sleek metal buckle.",
+      "price": 29.99,
+      "category": "Accessories",
+      "ratings": 4.3,
+      "createdAt": "2024-07-24T14:35:00"
+    },
+    {
+      "name": "E-reader",
+      "image": "https://example.com/images/e-reader.jpg",
+      "description": "Lightweight e-reader with adjustable lighting and long battery life.",
+      "price": 109.99,
+      "category": "Electronics",
+      "ratings": 4.6,
+      "createdAt": "2024-08-04T11:45:00"
+    },
+    {
+      "name": "Travel Mug",
+      "image": "https://example.com/images/travel-mug.jpg",
+      "description": "Insulated travel mug with spill-proof lid and durable design.",
+      "price": 19.99,
+      "category": "Kitchen & Dining",
+      "ratings": 4.7,
+      "createdAt": "2024-08-05T08:30:00"
+    },
+    {
+      "name": "Folding Bike",
+      "image": "https://example.com/images/folding-bike.jpg",
+      "description": "Compact folding bike perfect for commuting and easy storage.",
+      "price": 249.99,
+      "category": "Fitness",
+      "ratings": 4.4,
+      "createdAt": "2024-07-27T16:10:00"
+    },
+    {
+      "name": "Noise-Cancelling Earbuds",
+      "image": "https://example.com/images/noise-cancelling-earbuds.jpg",
+      "description": "True wireless earbuds with active noise cancellation and long battery life.",
+      "price": 149.99,
+      "category": "Electronics",
+      "ratings": 4.5,
+      "createdAt": "2024-07-31T19:15:00"
+    },
+    {
+      "name": "Waterproof Jacket",
+      "image": "https://example.com/images/waterproof-jacket.jpg",
+      "description": "Lightweight waterproof jacket with breathable fabric for outdoor activities.",
+      "price": 79.99,
+      "category": "Clothing",
+      "ratings": 4.6,
+      "createdAt": "2024-08-03T06:20:00"
+    },
+    {
+      "name": "Electric Scooter",
+      "image": "https://example.com/images/electric-scooter.jpg",
+      "description": "Eco-friendly electric scooter with long-range battery and LED display.",
+      "price": 399.99,
+      "category": "Outdoor",
+      "ratings": 4.8,
+      "createdAt": "2024-07-26T11:35:00"
+    }
+  ]
