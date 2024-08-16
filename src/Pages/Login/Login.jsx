@@ -1,6 +1,20 @@
 import loginImg from '../../assets/login-register.svg'
+import useAuth from '../../Hooks/useAuth';
 
 const Login = () => {
+    const { loginUser } = useAuth();
+
+    const handleLogin = e => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        loginUser(email, password)
+            .then(() => { }).catch((error) => {
+                console.error(error.message);
+            });
+    };
+
     return (
         <div className="hero min-h-[calc(100vh-68px)]">
             <div className="hero-content flex-col lg:flex-row justify-around">
@@ -9,12 +23,12 @@ const Login = () => {
                 </div>
                 <div className="card bg-base-100 sm:w-full lg:w-1/2 shrink-0 shadow-md rounded-none">
                     <h1 className="text-2xl font-bold px-8 pt-8">Login now!</h1>
-                    <form className="card-body">
+                    <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                             <label className="label" htmlFor='email'>
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name='password' id='email' placeholder="email" className="input input-bordered rounded-none" autoComplete='email' required />
+                            <input type="email" name='email' id='email' placeholder="email" className="input input-bordered rounded-none" autoComplete='email' required />
                         </div>
                         <div className="form-control">
                             <label className="label" htmlFor='password'>
