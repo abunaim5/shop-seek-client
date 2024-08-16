@@ -12,11 +12,13 @@ const Products = () => {
     const [sortDateVal, setSortDateVal] = useState('Newest');
     const [brandValue, setBrandValue] = useState('All');
     const [categoryValue, setCategoryValue] = useState('All');
+    const [min, setMin] = useState('');
+    const [max, setMax] = useState('');
     const { count } = useLoaderData();
     const pageCount = Math.ceil(count / itemsPerPage);
     const pages = [...Array(pageCount).keys()];
 
-    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal, brandValue, categoryValue });
+    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal, brandValue, categoryValue, min, max });
     // console.log(sortPriceVal, sortDateVal);
 
     // handle items per page count
@@ -40,6 +42,7 @@ const Products = () => {
         }
     };
 
+    // filter products by brand
     const brandOptions = {
         name: 'Brand',
         options: [
@@ -53,6 +56,7 @@ const Products = () => {
         borderCls: ''
     };
 
+    // filter products by category
     const categoryOptions = {
         name: 'Category',
         options: [
@@ -61,21 +65,22 @@ const Products = () => {
             'Bata'
         ],
         setValue: setCategoryValue,
-        roundCls: 'rounded-none',
-        borderCls: 'border-x-0'
-    };
-
-    const priceOptions = {
-        name: 'Price',
-        options: [
-            'All',
-            'Nike',
-            'Bata'
-        ],
         roundCls: 'rounded-l-none',
-        borderCls: ''
+        borderCls: 'border-l-0'
     };
 
+    // filter products by min or max price
+    const handlePriceRange = e => {
+        e.preventDefault();
+        const price = e.target.name;
+        if(price === 'min'){
+            setMin(e.target.value);
+        } else if(price === 'max'){
+            setMax(e.target.value);
+        }
+    }
+
+    // sorting products by low and high price
     const priceSortOptions = {
         name: 'Sort by Price',
         options: [
@@ -88,6 +93,7 @@ const Products = () => {
         borderCls: ''
     };
 
+    // sorting products by created date
     const dateSortOptions = {
         name: 'Sort by Date',
         options: [
@@ -108,10 +114,19 @@ const Products = () => {
                 </label>
             </div>
             <div className="flex items-center justify-between mb-8">
-                <div>
-                    <SelectOption optionsData={brandOptions} />
-                    <SelectOption optionsData={categoryOptions} />
-                    <SelectOption optionsData={priceOptions} />
+                <div className="flex items-center gap-4">
+                    <div>
+                        {/* <p className="">Filter:</p> */}
+                        <SelectOption optionsData={brandOptions} />
+                        <SelectOption optionsData={categoryOptions} />
+                    </div>
+                    <form onBlur={handlePriceRange}>
+                        {/* <p>Price Range:</p> */}
+                        <div className="flex gap-2">
+                            <input type="number" name='min' placeholder="Min" className="input input-bordered" />
+                            <input type="number" name='max' placeholder="Max" className="input input-bordered" />
+                        </div>
+                    </form>
                 </div>
                 <div>
                     <SelectOption optionsData={priceSortOptions} />
