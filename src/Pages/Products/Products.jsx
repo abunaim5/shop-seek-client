@@ -15,7 +15,7 @@ const Products = () => {
     const pageCount = Math.ceil(count / itemsPerPage);
     const pages = [...Array(pageCount).keys()];
 
-    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal });
+    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal, brandValue });
     // console.log(sortPriceVal, sortDateVal);
 
     // handle items per page count
@@ -43,7 +43,7 @@ const Products = () => {
         name: 'Brand',
         options: [
             'All',
-            'Nike',
+            'Realme',
             'Bata'
         ],
         value: brandValue,
