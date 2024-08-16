@@ -1,34 +1,19 @@
-import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import { CiSearch } from "react-icons/ci";
 import ProductCard from "./ProductCard";
-import ReactPaginate from 'react-paginate';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import SelectOption from "../../Components/SelectOption/SelectOption";
+import useProducts from "../../Hooks/useProducts";
 
 const Products = () => {
-    const axiosPublic = useAxiosPublic();
-    const [products, setProducts] = useState([])
     const [itemsPerPage, setItemsPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(0);
-    const [brandValue, setBrandValue] = useState('')
+    const [brandValue, setBrandValue] = useState('All');
     const { count } = useLoaderData();
     const pageCount = Math.ceil(count / itemsPerPage);
     const pages = [...Array(pageCount).keys()];
 
-    // fetch products data and handle fetching data with pagination
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const res = await axiosPublic.get(`/products?page=${currentPage}&size=${itemsPerPage}`);
-                setProducts(res.data);
-            } catch (error) {
-                console.error(error);
-            }
-        }
-        fetchProducts();
-    }, [currentPage, itemsPerPage]);
+    const products = useProducts({currentPage, itemsPerPage});
 
     // handle items per page count
     const handleItemsPerPage = e => {
@@ -89,7 +74,7 @@ const Products = () => {
     const priceSortOptions = {
         name: 'Sort by Price',
         options: [
-            'All',
+            'Default',
             'Low to High',
             'High to Low'
         ],
@@ -100,7 +85,7 @@ const Products = () => {
     const dateSortOptions = {
         name: 'Sort by Date',
         options: [
-            'All',
+            'Default',
             'Newest',
             'Oldest'
         ],
