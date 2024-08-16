@@ -8,12 +8,14 @@ import useProducts from "../../Hooks/useProducts";
 const Products = () => {
     const [itemsPerPage, setItemsPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(0);
+    const [sortPriceVal, setSortPriceVal] = useState('Default');
     const [brandValue, setBrandValue] = useState('All');
     const { count } = useLoaderData();
     const pageCount = Math.ceil(count / itemsPerPage);
     const pages = [...Array(pageCount).keys()];
 
-    const products = useProducts({currentPage, itemsPerPage});
+    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal });
+    console.log(sortPriceVal);
 
     // handle items per page count
     const handleItemsPerPage = e => {
@@ -78,6 +80,8 @@ const Products = () => {
             'Low to High',
             'High to Low'
         ],
+        value: sortPriceVal,
+        setValue: setSortPriceVal,
         roundCls: 'rounded-r-none',
         borderCls: ''
     };
