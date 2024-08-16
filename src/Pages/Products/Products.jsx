@@ -9,13 +9,14 @@ const Products = () => {
     const [itemsPerPage, setItemsPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(0);
     const [sortPriceVal, setSortPriceVal] = useState('Default');
+    const [sortDateVal, setSortDateVal] = useState('Newest');
     const [brandValue, setBrandValue] = useState('All');
     const { count } = useLoaderData();
     const pageCount = Math.ceil(count / itemsPerPage);
     const pages = [...Array(pageCount).keys()];
 
-    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal });
-    console.log(sortPriceVal);
+    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal });
+    // console.log(sortPriceVal, sortDateVal);
 
     // handle items per page count
     const handleItemsPerPage = e => {
@@ -80,7 +81,6 @@ const Products = () => {
             'Low to High',
             'High to Low'
         ],
-        value: sortPriceVal,
         setValue: setSortPriceVal,
         roundCls: 'rounded-r-none',
         borderCls: ''
@@ -89,10 +89,10 @@ const Products = () => {
     const dateSortOptions = {
         name: 'Sort by Date',
         options: [
-            'Default',
             'Newest',
             'Oldest'
         ],
+        setValue: setSortDateVal,
         roundCls: 'rounded-l-none',
         borderCls: 'border-l-0'
     };

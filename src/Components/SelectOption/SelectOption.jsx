@@ -1,6 +1,6 @@
 
 const SelectOption = ({ optionsData }) => {
-    const { name, options, borderCls, roundCls, value, setValue } = optionsData;
+    const { name, options, borderCls, roundCls, setValue } = optionsData;
 
     return (
         <select defaultValue={name} onChange={(e) => setValue(e.target.value)} className={`select select-bordered focus:outline-none rounded-md ${borderCls} ${roundCls} border-accent`}>
