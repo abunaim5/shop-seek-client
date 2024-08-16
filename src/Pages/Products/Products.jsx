@@ -12,13 +12,14 @@ const Products = () => {
     const [sortDateVal, setSortDateVal] = useState('Newest');
     const [brandValue, setBrandValue] = useState('All');
     const [categoryValue, setCategoryValue] = useState('All');
+    const [searchText, setSearchText] = useState('');
     const [min, setMin] = useState('');
     const [max, setMax] = useState('');
     const { count } = useLoaderData();
     const pageCount = Math.ceil(count / itemsPerPage);
     const pages = [...Array(pageCount).keys()];
 
-    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal, brandValue, categoryValue, min, max });
+    const products = useProducts({ currentPage, itemsPerPage, sortPriceVal, sortDateVal, brandValue, categoryValue, min, max, searchText });
     // console.log(sortPriceVal, sortDateVal);
 
     // handle items per page count
@@ -40,6 +41,13 @@ const Products = () => {
         if (currentPage < pages.length - 1) {
             setCurrentPage(currentPage + 1);
         }
+    };
+
+    // handle search product by name
+    const handleSearch = e => {
+        e.preventDefault();
+        const text = e.target.value;
+        setSearchText(text === '' ? '' : text);
     };
 
     // filter products by brand
@@ -73,9 +81,9 @@ const Products = () => {
     const handlePriceRange = e => {
         e.preventDefault();
         const price = e.target.name;
-        if(price === 'min'){
+        if (price === 'min') {
             setMin(e.target.value);
-        } else if(price === 'max'){
+        } else if (price === 'max') {
             setMax(e.target.value);
         }
     }
@@ -108,10 +116,12 @@ const Products = () => {
     return (
         <div className='max-w-[1400px] mx-auto px-2 mb-20'>
             <div className='sm:w-full md:w-1/2 mx-auto my-20'>
-                <label className="input focus:outline-none input-bordered flex items-center gap-2 rounded-md">
-                    <input type="text" className="grow" placeholder="Search" />
-                    <CiSearch />
-                </label>
+                <form onChange={handleSearch}>
+                    <label className="input focus:outline-none input-bordered flex items-center gap-2 rounded-md">
+                        <input type="text" name="search" className="grow" placeholder="Search" />
+                        <CiSearch />
+                    </label>
+                </form>
             </div>
             <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-4">
