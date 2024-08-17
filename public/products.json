@@ -1,335 +1,402 @@
 [
-    {
-      "name": "Wireless Headphones",
-      "image": "https://i.postimg.cc/rm97s59B/1.png",
-      "description": "Noise-cancelling wireless headphones with long battery life.",
-      "price": 99.99,
-      "category": "Electronics",
-      "ratings": 4.5,
-      "createdAt": "2024-08-01T10:45:00"
-    },
-    {
-      "name": "Organic Cotton T-shirt",
-      "image": "https://i.postimg.cc/q7yPfP6M/2.png",
-      "description": "Eco-friendly T-shirt made from 100% organic cotton.",
-      "price": 19.99,
-      "category": "Clothing",
-      "ratings": 4.2,
-      "createdAt": "2024-07-29T08:30:00"
-    },
-    {
-      "name": "Smartphone",
-      "image": "https://i.postimg.cc/QdR2y8ty/3.png",
-      "description": "Latest model with 128GB storage and triple camera.",
-      "price": 599.99,
-      "category": "Electronics",
-      "ratings": 4.7,
-      "createdAt": "2024-08-02T12:00:00"
-    },
-    {
-      "name": "Running Shoes",
-      "image": "https://i.postimg.cc/Ss4wmgcL/4.png",
-      "description": "Lightweight running shoes with excellent grip and comfort.",
-      "price": 49.99,
-      "category": "Footwear",
-      "ratings": 4.3,
-      "createdAt": "2024-07-25T09:10:00"
-    },
-    {
-      "name": "Blender",
-      "image": "https://i.postimg.cc/SNRHQ2YP/5.png",
-      "description": "High-speed blender perfect for smoothies and soups.",
-      "price": 29.99,
-      "category": "Home Appliances",
-      "ratings": 4.0,
-      "createdAt": "2024-08-03T14:20:00"
-    },
-    {
-      "name": "Desk Lamp",
-      "image": "https://i.postimg.cc/YqPZvr1C/6.png",
-      "description": "Adjustable LED desk lamp with touch control and brightness settings.",
-      "price": 24.99,
-      "category": "Home Decor",
-      "ratings": 4.6,
-      "createdAt": "2024-07-28T16:45:00"
-    },
-    {
-      "name": "Yoga Mat",
-      "image": "https://example.com/images/yoga-mat.jpg",
-      "description": "Non-slip yoga mat with extra cushioning for comfort.",
-      "price": 14.99,
-      "category": "Fitness",
-      "ratings": 4.8,
-      "createdAt": "2024-08-01T07:50:00"
-    },
-    {
-      "name": "Bluetooth Speaker",
-      "image": "https://example.com/images/bluetooth-speaker.jpg",
-      "description": "Portable speaker with powerful sound and waterproof design.",
-      "price": 39.99,
-      "category": "Electronics",
-      "ratings": 4.4,
-      "createdAt": "2024-07-30T18:30:00"
-    },
-    {
-      "name": "Leather Wallet",
-      "image": "https://example.com/images/leather-wallet.jpg",
-      "description": "Premium leather wallet with multiple card slots and a coin pocket.",
-      "price": 34.99,
-      "category": "Accessories",
-      "ratings": 4.3,
-      "createdAt": "2024-07-24T12:15:00"
-    },
-    {
-      "name": "Gaming Chair",
-      "image": "https://example.com/images/gaming-chair.jpg",
-      "description": "Ergonomic gaming chair with adjustable armrests and lumbar support.",
-      "price": 149.99,
-      "category": "Furniture",
-      "ratings": 4.7,
-      "createdAt": "2024-08-05T11:00:00"
-    },
-    {
-      "name": "Coffee Maker",
-      "image": "https://example.com/images/coffee-maker.jpg",
-      "description": "Single-serve coffee maker with customizable brew strength.",
-      "price": 59.99,
-      "category": "Kitchen Appliances",
-      "ratings": 4.5,
-      "createdAt": "2024-08-04T08:10:00"
-    },
-    {
-      "name": "Fitness Tracker",
-      "image": "https://example.com/images/fitness-tracker.jpg",
-      "description": "Waterproof fitness tracker with heart rate monitor and GPS.",
-      "price": 79.99,
-      "category": "Fitness",
-      "ratings": 4.1,
-      "createdAt": "2024-07-27T14:50:00"
-    },
-    {
-      "name": "Sunglasses",
-      "image": "https://example.com/images/sunglasses.jpg",
-      "description": "Polarized sunglasses with UV protection for outdoor activities.",
-      "price": 24.99,
-      "category": "Accessories",
-      "ratings": 4.6,
-      "createdAt": "2024-07-22T13:30:00"
-    },
-    {
-      "name": "Air Fryer",
-      "image": "https://example.com/images/air-fryer.jpg",
-      "description": "Oil-free air fryer with adjustable temperature control.",
-      "price": 89.99,
-      "category": "Kitchen Appliances",
-      "ratings": 4.4,
-      "createdAt": "2024-08-02T17:25:00"
-    },
-    {
-      "name": "Graphic T-Shirt",
-      "image": "https://example.com/images/graphic-tshirt.jpg",
-      "description": "Trendy graphic T-shirt with a modern design and soft fabric.",
-      "price": 15.99,
-      "category": "Clothing",
-      "ratings": 4.2,
-      "createdAt": "2024-07-26T09:40:00"
-    },
-    {
-      "name": "Laptop Stand",
-      "image": "https://example.com/images/laptop-stand.jpg",
-      "description": "Adjustable laptop stand with ergonomic design and cooling pad.",
-      "price": 29.99,
-      "category": "Office Supplies",
-      "ratings": 4.5,
-      "createdAt": "2024-07-23T18:55:00"
-    },
-    {
-      "name": "Camping Tent",
-      "image": "https://example.com/images/camping-tent.jpg",
-      "description": "Waterproof camping tent suitable for 2-3 people.",
-      "price": 89.99,
-      "category": "Outdoor",
-      "ratings": 4.6,
-      "createdAt": "2024-07-28T15:20:00"
-    },
-    {
-      "name": "Wireless Mouse",
-      "image": "https://example.com/images/wireless-mouse.jpg",
-      "description": "Ergonomic wireless mouse with silent clicks and adjustable DPI.",
-      "price": 19.99,
-      "category": "Electronics",
-      "ratings": 4.4,
-      "createdAt": "2024-08-06T12:35:00"
-    },
-    {
-      "name": "Notebook",
-      "image": "https://example.com/images/notebook.jpg",
-      "description": "Hardcover notebook with dotted pages, perfect for journaling.",
-      "price": 9.99,
-      "category": "Stationery",
-      "ratings": 4.7,
-      "createdAt": "2024-08-03T09:10:00"
-    },
-    {
-      "name": "Electric Kettle",
-      "image": "https://example.com/images/electric-kettle.jpg",
-      "description": "Fast-boiling electric kettle with auto shut-off feature.",
-      "price": 29.99,
-      "category": "Kitchen Appliances",
-      "ratings": 4.5,
-      "createdAt": "2024-07-31T07:25:00"
-    },
-    {
-      "name": "Casual Sneakers",
-      "image": "https://example.com/images/casual-sneakers.jpg",
-      "description": "Comfortable sneakers perfect for everyday wear.",
-      "price": 44.99,
-      "category": "Footwear",
-      "ratings": 4.2,
-      "createdAt": "2024-08-05T16:45:00"
-    },
-    {
-      "name": "Smartwatch",
-      "image": "https://example.com/images/smartwatch.jpg",
-      "description": "Smartwatch with fitness tracking, heart rate monitor, and notifications.",
-      "price": 129.99,
-      "category": "Electronics",
-      "ratings": 4.8,
-      "createdAt": "2024-07-29T11:20:00"
-    },
-    {
-      "name": "Folding Chair",
-      "image": "https://example.com/images/folding-chair.jpg",
-      "description": "Durable folding chair suitable for outdoor and indoor use.",
-      "price": 34.99,
-      "category": "Furniture",
-      "ratings": 4.1,
-      "createdAt": "2024-07-25T10:55:00"
-    },
-    {
-      "name": "Electric Grill",
-      "image": "https://example.com/images/electric-grill.jpg",
-      "description": "Compact electric grill for indoor cooking.",
-      "price": 59.99,
-      "category": "Kitchen Appliances",
-      "ratings": 4.4,
-      "createdAt": "2024-07-23T13:15:00"
-    },
-    {
-      "name": "Leather Backpack",
-      "image": "https://example.com/images/leather-backpack.jpg",
-      "description": "Stylish leather backpack with multiple compartments.",
-      "price": 89.99,
-      "category": "Accessories",
-      "ratings": 4.6,
-      "createdAt": "2024-07-26T17:40:00"
-    },
-    {
-      "name": "Electric Toothbrush",
-      "image": "https://example.com/images/electric-toothbrush.jpg",
-      "description": "Rechargeable electric toothbrush with multiple cleaning modes.",
-      "price": 49.99,
-      "category": "Health & Personal Care",
-      "ratings": 4.3,
-      "createdAt": "2024-08-02T19:00:00"
-    },
-    {
-      "name": "Wireless Charger",
-      "image": "https://example.com/images/wireless-charger.jpg",
-      "description": "Fast wireless charger compatible with all Qi-enabled devices.",
-      "price": 24.99,
-      "category": "Electronics",
-      "ratings": 4.2,
-      "createdAt": "2024-08-01T16:30:00"
-    },
-    {
-      "name": "Vacuum Cleaner",
-      "image": "https://example.com/images/vacuum-cleaner.jpg",
-      "description": "Powerful cordless vacuum cleaner for home and car.",
-      "price": 129.99,
-      "category": "Home Appliances",
-      "ratings": 4.7,
-      "createdAt": "2024-07-30T08:45:00"
-    },
-    {
-      "name": "Wristwatch",
-      "image": "https://example.com/images/wristwatch.jpg",
-      "description": "Classic wristwatch with a stainless steel band and water resistance.",
-      "price": 69.99,
-      "category": "Accessories",
-      "ratings": 4.5,
-      "createdAt": "2024-07-22T10:20:00"
-    },
-    {
-      "name": "Outdoor Hammock",
-      "image": "https://example.com/images/outdoor-hammock.jpg",
-      "description": "Comfortable outdoor hammock with a sturdy frame.",
-      "price": 59.99,
-      "category": "Outdoor",
-      "ratings": 4.8,
-      "createdAt": "2024-07-28T12:05:00"
-    },
-    {
-      "name": "Leather Belt",
-      "image": "https://example.com/images/leather-belt.jpg",
-      "description": "Genuine leather belt with a sleek metal buckle.",
-      "price": 29.99,
-      "category": "Accessories",
-      "ratings": 4.3,
-      "createdAt": "2024-07-24T14:35:00"
-    },
-    {
-      "name": "E-reader",
-      "image": "https://example.com/images/e-reader.jpg",
-      "description": "Lightweight e-reader with adjustable lighting and long battery life.",
-      "price": 109.99,
-      "category": "Electronics",
-      "ratings": 4.6,
-      "createdAt": "2024-08-04T11:45:00"
-    },
-    {
-      "name": "Travel Mug",
-      "image": "https://example.com/images/travel-mug.jpg",
-      "description": "Insulated travel mug with spill-proof lid and durable design.",
-      "price": 19.99,
-      "category": "Kitchen & Dining",
-      "ratings": 4.7,
-      "createdAt": "2024-08-05T08:30:00"
-    },
-    {
-      "name": "Folding Bike",
-      "image": "https://example.com/images/folding-bike.jpg",
-      "description": "Compact folding bike perfect for commuting and easy storage.",
-      "price": 249.99,
-      "category": "Fitness",
-      "ratings": 4.4,
-      "createdAt": "2024-07-27T16:10:00"
-    },
-    {
-      "name": "Noise-Cancelling Earbuds",
-      "image": "https://example.com/images/noise-cancelling-earbuds.jpg",
-      "description": "True wireless earbuds with active noise cancellation and long battery life.",
-      "price": 149.99,
-      "category": "Electronics",
-      "ratings": 4.5,
-      "createdAt": "2024-07-31T19:15:00"
-    },
-    {
-      "name": "Waterproof Jacket",
-      "image": "https://example.com/images/waterproof-jacket.jpg",
-      "description": "Lightweight waterproof jacket with breathable fabric for outdoor activities.",
-      "price": 79.99,
-      "category": "Clothing",
-      "ratings": 4.6,
-      "createdAt": "2024-08-03T06:20:00"
-    },
-    {
-      "name": "Electric Scooter",
-      "image": "https://example.com/images/electric-scooter.jpg",
-      "description": "Eco-friendly electric scooter with long-range battery and LED display.",
-      "price": 399.99,
-      "category": "Outdoor",
-      "ratings": 4.8,
-      "createdAt": "2024-07-26T11:35:00"
-    }
-  ]
+  {
+    "name": "iPhone 14 Pro",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/MTsbn8Zw/iphone14-pro.png",
+    "description": "Latest Apple iPhone with A16 Bionic chip and improved camera system.",
+    "price": 1099.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "05/08/2024"
+  },
+  {
+    "name": "MacBook Air M2",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/v8NtMMSL/macbook-air-m2.png",
+    "description": "Lightweight MacBook Air with M2 chip for ultra-fast performance.",
+    "price": 1199.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "12/07/2024"
+  },
+  {
+    "name": "AirPods Pro 2",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/Zqbf7mRk/airpod-pro-2.png",
+    "description": "Apple's premium wireless earbuds with noise cancellation.",
+    "price": 249.99,
+    "category": "Accessories",
+    "ratings": 5,
+    "createdAt": "17/08/2024"
+  },
+  {
+    "name": "iPad Pro",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/d0j9KyzL/ipad-pro-m2.png",
+    "description": "Powerful iPad Pro with M2 chip and Liquid Retina display.",
+    "price": 899.99,
+    "category": "Tablets",
+    "ratings": 5,
+    "createdAt": "22/06/2024"
+  },
+  {
+    "name": "OnePlus 10 Pro",
+    "brand": "OnePlus",
+    "image": "https://i.postimg.cc/GpKvf1yD/oneplus10-pro.png",
+    "description": "Flagship OnePlus smartphone with Snapdragon 8 Gen 1 and 120Hz display.",
+    "price": 899.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "08/06/2024"
+  },
+  {
+    "name": "OnePlus Nord 2T",
+    "brand": "OnePlus",
+    "image": "https://i.postimg.cc/4NHbxMDC/norde-2t.png",
+    "description": "Mid-range OnePlus phone with fast charging and AMOLED display.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "11/07/2024"
+  },
+  {
+    "name": "OnePlus Buds Pro",
+    "brand": "OnePlus",
+    "image": "https://i.postimg.cc/wBghFB7H/oneplus-buds-pro.png",
+    "description": "Wireless earbuds with active noise cancellation and long battery life.",
+    "price": 149.99,
+    "category": "Accessories",
+    "ratings": 4,
+    "createdAt": "21/07/2024"
+  },
+  {
+    "name": "OnePlus Watch",
+    "brand": "OnePlus",
+    "image": "https://i.postimg.cc/fyGddz6G/oneplus-watch.png",
+    "description": "Stylish smartwatch with fitness tracking and long battery life.",
+    "price": 199.99,
+    "category": "Wearables",
+    "ratings": 4,
+    "createdAt": "05/06/2024"
+  },
+  {
+    "name": "Samsung Galaxy S22",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/CxN7f24c/galaxy-s22.png",
+    "description": "Samsung Galaxy flagship with Dynamic AMOLED display and powerful camera.",
+    "price": 999.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "02/08/2024"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold 4",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/76CndZrR/galaxy-z-fold.png",
+    "description": "Innovative foldable phone with dual displays and powerful performance.",
+    "price": 1799.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "10/07/2024"
+  },
+  {
+    "name": "Samsung Galaxy Watch 5",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/zf2kxR6W/galaxy-watch5.png",
+    "description": "Next-gen Galaxy smartwatch with health tracking and AMOLED display.",
+    "price": 349.99,
+    "category": "Accessories",
+    "ratings": 4,
+    "createdAt": "10/07/2024"
+  },
+  {
+    "name": "Samsung Galaxy Buds Pro",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/mgRVk47c/galaxy-buds-pro.png",
+    "description": "Premium wireless earbuds with active noise cancellation.",
+    "price": 199.99,
+    "category": "Accessories",
+    "ratings": 4,
+    "createdAt": "25/06/2024"
+  },
+  {
+    "name": "Samsung Smart TV",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/XY015d6Y/samsung-tv.png",
+    "description": "Smart TV with 4K resolution and built-in streaming services.",
+    "price": 799.99,
+    "category": "Home Appliances",
+    "ratings": 5,
+    "createdAt": "17/08/2024"
+  },
+  {
+    "name": "BlackBerry Key2",
+    "brand": "BlackBerry",
+    "image": "https://i.postimg.cc/VvC4rL7t/blackberry-key2.png",
+    "description": "Iconic BlackBerry smartphone with physical keyboard and enhanced security features.",
+    "price": 599.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "25/06/2024"
+  },
+  {
+    "name": "BlackBerry Motion",
+    "brand": "BlackBerry",
+    "image": "https://i.postimg.cc/bY7mXkJ9/blackberry-motion.png",
+    "description": "All-touch BlackBerry phone with secure software and robust design.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "05/07/2024"
+  },
+  {
+    "name": "Google Pixel 7 Pro",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/jqmFsB8N/pixel7-pro.png",
+    "description": "Google Pixel with advanced AI-powered camera and Google Tensor processor.",
+    "price": 999.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "15/08/2024"
+  },
+  {
+    "name": "Google Nest Hub",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/P5Z42cyb/google-nest-hub.png",
+    "description": "Smart home device with voice control and integrated Google Assistant.",
+    "price": 129.99,
+    "category": "Smart Home",
+    "ratings": 4,
+    "createdAt": "07/07/2024"
+  },
+  {
+    "name": "Google Chromecast",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/qR9xTHkv/google-chromecast.png",
+    "description": "Stream content from your phone to your TV with ease.",
+    "price": 49.99,
+    "category": "Smart Home",
+    "ratings": 4,
+    "createdAt": "21/06/2024"
+  },
+  {
+    "name": "Google Pixel Buds",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/GhDS9zNf/pixel-buds.png",
+    "description": "Wireless earbuds with real-time translation and excellent sound quality.",
+    "price": 149.99,
+    "category": "Accessories",
+    "ratings": 4,
+    "createdAt": "29/07/2024"
+  },
+  {
+    "name": "Google Nest Thermostat",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/KvCf7FPv/google-nest-thermostat.png",
+    "description": "Smart thermostat that helps save energy and control your home's temperature.",
+    "price": 229.99,
+    "category": "Smart Home",
+    "ratings": 4,
+    "createdAt": "12/06/2024"
+  },
+  {
+    "name": "Oppo Find X5 Pro",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/vBDxSxMR/oppo-find-x5.png",
+    "description": "Oppo flagship phone with a stunning display and ultra-fast charging.",
+    "price": 1099.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "18/07/2024"
+  },
+  {
+    "name": "Oppo Reno 7",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/prFhPNpq/oppo-reno7.png",
+    "description": "Oppo mid-range smartphone with great camera performance.",
+    "price": 399.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "09/06/2024"
+  },
+  {
+    "name": "Oppo Enco X",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/Z5FN9hjQ/oppo-enco-x-buds.png",
+    "description": "High-quality wireless earbuds with noise cancellation and immersive sound.",
+    "price": 149.99,
+    "category": "Accessories",
+    "ratings": 4,
+    "createdAt": "05/06/2024"
+  },
+  {
+    "name": "Oppo Watch 3",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/dQLfcJ9w/oppo-watch-3.png",
+    "description": "Stylish smartwatch with AMOLED display and long battery life.",
+    "price": 249.99,
+    "category": "Wearables",
+    "ratings": 4,
+    "createdAt": "27/07/2024"
+  },
+  {
+    "name": "iPhone 13 Mini",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/yd6y6NHn/iphone13-mini.png",
+    "description": "Compact version of the iPhone 13 with the A15 Bionic chip.",
+    "price": 799.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "15/07/2024"
+  },
+  {
+    "name": "Apple Watch Series 7",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/XJXsWgdQ/apple-watch-series-7.png",
+    "description": "The latest Apple Watch with a larger display and advanced health features.",
+    "price": 399.99,
+    "category": "Wearables",
+    "ratings": 5,
+    "createdAt": "11/08/2024"
+  },
+  {
+    "name": "OnePlus 9R",
+    "brand": "OnePlus",
+    "image": "https://i.postimg.cc/t4h3h6R2/oneplus-9r.png",
+    "description": "Affordable version of the OnePlus 9 with fast charging and a 120Hz display.",
+    "price": 549.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "01/06/2024"
+  },
+  {
+    "name": "OnePlus 8T",
+    "brand": "OnePlus",
+    "image": "https://i.postimg.cc/CxyCB70R/oneplus-8t.png",
+    "description": "A sleek phone with Fluid AMOLED display and Warp Charge 65.",
+    "price": 649.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "22/07/2024"
+  },
+  {
+    "name": "Samsung Galaxy A52",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/FFdTnD9K/galaxy-a52.png",
+    "description": "Mid-range phone with Super AMOLED display and 64MP camera.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "13/08/2024"
+  },
+  {
+    "name": "Samsung Galaxy Tab S8",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/tg45dzSp/galaxy-tab-s8.png",
+    "description": "Powerful tablet with S Pen support and large display.",
+    "price": 849.99,
+    "category": "Tablets",
+    "ratings": 5,
+    "createdAt": "09/08/2024"
+  },
+  {
+    "name": "BlackBerry Evolve",
+    "brand": "BlackBerry",
+    "image": "https://i.postimg.cc/tTf24Vzy/blackberry-evolve.png",
+    "description": "Full touchscreen BlackBerry phone with enhanced security.",
+    "price": 399.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "05/07/2024"
+  },
+  {
+    "name": "Google Nest Audio",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/jjbh9X3p/google-nest-audio.png",
+    "description": "Smart speaker with excellent sound quality and Google Assistant built-in.",
+    "price": 99.99,
+    "category": "Smart Home",
+    "ratings": 4,
+    "createdAt": "20/06/2024"
+  },
+  {
+    "name": "Google Pixel 6a",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/z3YLBdh5/pixel-6a.png",
+    "description": "Affordable Google Pixel with great camera and clean software experience.",
+    "price": 449.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "29/07/2024"
+  },
+  {
+    "name": "Google Nest Doorbell",
+    "brand": "Google",
+    "image": "https://i.postimg.cc/BQjN1t1V/google-nest-doorbell.png",
+    "description": "Smart video doorbell with HD video and real-time notifications.",
+    "price": 229.99,
+    "category": "Smart Home",
+    "ratings": 4,
+    "createdAt": "04/08/2024"
+  },
+  {
+    "name": "Oppo A74 5G",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/cJxnw5bL/opp-a74.png",
+    "description": "Affordable Oppo 5G phone with a large display and powerful battery.",
+    "price": 349.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "18/07/2024"
+  },
+  {
+    "name": "Oppo F19 Pro+",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/VNKbRBxB/oppo-f19-pro.png",
+    "description": "Sleek design with advanced photography features.",
+    "price": 379.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "02/08/2024"
+  },
+  {
+    "name": "iPhone SE 2024",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/PJPbZFNw/iphone-se.png",
+    "description": "Budget-friendly iPhone with powerful performance in a compact size.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 5,
+    "createdAt": "16/08/2024"
+  },
+  {
+    "name": "Apple AirTag",
+    "brand": "Apple",
+    "image": "https://i.postimg.cc/JhppSFDs/apple-airtag.png",
+    "description": "Compact tracker to help locate lost items using the Find My network.",
+    "price": 29.99,
+    "category": "Accessories",
+    "ratings": 5,
+    "createdAt": "03/07/2024"
+  },
+  {
+    "name": "Samsung Galaxy Buds Live",
+    "brand": "Samsung",
+    "image": "https://i.postimg.cc/qM2jpq6V/galaxy-buds-live.png",
+    "description": "Unique design wireless earbuds with AKG sound and active noise cancellation.",
+    "price": 169.99,
+    "category": "Accessories",
+    "ratings": 4,
+    "createdAt": "07/06/2024"
+  },
+  {
+    "name": "Oppo K9 Pro",
+    "brand": "Oppo",
+    "image": "https://i.postimg.cc/4dMHC4NY/oppo-k9.png",
+    "description": "Affordable flagship phone with great performance and sleek design.",
+    "price": 529.99,
+    "category": "Electronics",
+    "ratings": 4,
+    "createdAt": "14/06/2024"
+  }
+]

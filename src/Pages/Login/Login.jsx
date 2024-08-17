@@ -24,7 +24,7 @@ const Login = () => {
     };
 
     return (
-        <div className="hero min-h-[calc(100vh-68px)]">
+        <div className="hero min-h-[calc(100vh-94px)]">
             <div className="hero-content flex-col lg:flex-row justify-around">
                 <div className="base:w-full lg:w-1/2">
                     <img src={loginImg} alt="login image" className='w-[90%] mx-auto' />

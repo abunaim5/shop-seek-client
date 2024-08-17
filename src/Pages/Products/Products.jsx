@@ -6,7 +6,7 @@ import SelectOption from "../../Components/SelectOption/SelectOption";
 import useProducts from "../../Hooks/useProducts";
 
 const Products = () => {
-    const [itemsPerPage, setItemsPerPage] = useState(5);
+    const [itemsPerPage, setItemsPerPage] = useState(10);
     const [currentPage, setCurrentPage] = useState(0);
     const [sortPriceVal, setSortPriceVal] = useState('Default');
     const [sortDateVal, setSortDateVal] = useState('Newest');
@@ -55,8 +55,12 @@ const Products = () => {
         name: 'Brand',
         options: [
             'All',
-            'Realme',
-            'Bata'
+            'Apple',
+            'Samsung',
+            'Google',
+            'OnePlus',
+            'BlackBerry',
+            'Oppo',
         ],
         value: brandValue,
         setValue: setBrandValue,
@@ -69,8 +73,12 @@ const Products = () => {
         name: 'Category',
         options: [
             'All',
-            'Electronics',
-            'Bata'
+            'Accessories',
+            'Tablets',
+            'Wearables',
+            'Smart Home',
+            'Home Appliances',
+            'Electronics'
         ],
         setValue: setCategoryValue,
         roundCls: 'rounded-l-none',
@@ -144,7 +152,7 @@ const Products = () => {
                 </div>
             </div>
             <div>
-                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {
                         products.map(product => <ProductCard key={product._id} product={product} />)
                     }

@@ -5,7 +5,7 @@ const ProductCard = ({ product }) => {
         <div className="card card-compact rounded-md">
             <figure>
                 <img
-                    className='rounded-md'
+                    className='rounded-md border-2 border-gray-200'
                     src={product.image}
                     alt={`${product.name} image`} />
             </figure>

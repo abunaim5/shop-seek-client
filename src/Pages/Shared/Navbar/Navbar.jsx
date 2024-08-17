@@ -1,15 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import { MdMenu } from "react-icons/md";
 
 const Navbar = () => {
     const { user, loading, logoutUser } = useAuth();
 
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/products'>Products</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
-        <li><NavLink to='/blog'>Blog</NavLink></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link>About</Link></li>
+        <li><Link to='/products'>Products</Link></li>
+        <li><Link>Contact</Link></li>
+        <li><Link>Blog</Link></li>
     </>
 
     const handleLogoutUser = () => {
@@ -24,22 +25,11 @@ const Navbar = () => {
     // }
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-black/5 px-10 py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost pl-0 lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                    <MdMenu className="text-3xl" />
                     </div>
                     <ul
                         tabIndex={0}
