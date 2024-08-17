@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
 const Navbar = () => {
-    const { user, loading } = useAuth();
+    const { user, loading, logoutUser } = useAuth();
 
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -11,6 +11,17 @@ const Navbar = () => {
         <li><NavLink to='/contact'>Contact</NavLink></li>
         <li><NavLink to='/blog'>Blog</NavLink></li>
     </>
+
+    const handleLogoutUser = () => {
+        logoutUser()
+            .then(() => { }).catch((error) => {
+                console.error(error.message);
+            });
+    };
+
+    // if(loading) {
+    //     return
+    // }
 
     return (
         <div className="navbar bg-base-100">
@@ -48,12 +59,13 @@ const Navbar = () => {
                     user ? <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="avatar">
                             <div className="w-14 rounded-full">
-                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                <img src={user?.photoURL ? user?.photoURL : 'https://i.postimg.cc/KvrBDjKN/user.png'} />
                             </div>
                         </div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                            <li><a>{user.displayName}</a></li>
                             <li><a>Profile</a></li>
-                            <li><button className="text-red-600">Logout</button></li>
+                            <li><button onClick={handleLogoutUser} className="text-red-600">Logout</button></li>
                         </ul>
                     </div> : <>
                         <Link to='/login'><button className="btn btn-sm btn-accent btn-outline uppercase rounded-none">Login</button></Link>
