@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
     const axiosPublic = useAxiosPublic();
 
     const handleViewDetails = async (id) => {
-        const res = await axiosPublic.get(`/products/${id}`);
+        const res = await axiosPublic.get(`/product/${id}`);
         return res.data;
     };
 
@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
                 <div className='flex-1'>
                     <h2 className="card-title">{product.name}</h2>
                     <p>${product.price}</p>
-                    <p>Date: {product.createdAt}</p>
+                    {/* <p>Date: {product.createdAt}</p> */}
                 </div>
                 <div className="divider divider-horizontal" />
                 <PiShoppingCart className='text-3xl' />

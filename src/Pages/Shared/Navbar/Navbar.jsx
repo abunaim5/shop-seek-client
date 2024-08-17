@@ -53,13 +53,13 @@ const Navbar = () => {
                             </div>
                         </div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                            <li><a>{user.displayName}</a></li>
+                            <li><a>{user?.displayName ? user.displayName : 'Unknown'}</a></li>
                             <li><a>Profile</a></li>
                             <li><button onClick={handleLogoutUser} className="text-red-600">Logout</button></li>
                         </ul>
                     </div> : <>
-                        <Link to='/login'><button className="btn btn-sm btn-accent btn-outline uppercase rounded-none">Login</button></Link>
-                        <Link to='/register'><button className="btn btn-sm btn-accent uppercase rounded-none text-gray-800">Sign Up</button></Link>
+                        <Link to='/login'><button className="btn btn-sm btn-accent btn-outline uppercase rounded-sm">Login</button></Link>
+                        <Link to='/register'><button className="btn btn-sm btn-accent uppercase rounded-sm text-gray-800">Sign Up</button></Link>
                     </>
                 }
             </div>

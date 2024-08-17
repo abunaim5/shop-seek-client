@@ -131,8 +131,8 @@ const Products = () => {
                     </label>
                 </form>
             </div>
-            <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-4">
+            <div className="flex items-center flex-col lg:flex-row justify-between mb-8 gap-4">
+                <div className="flex flex-col lg:flex-row items-center gap-4">
                     <div>
                         {/* <p className="">Filter:</p> */}
                         <SelectOption optionsData={brandOptions} />
@@ -141,8 +141,8 @@ const Products = () => {
                     <form onBlur={handlePriceRange}>
                         {/* <p>Price Range:</p> */}
                         <div className="flex gap-2">
-                            <input type="number" name='min' placeholder="Min" className="input max-w-24 input-bordered focus:outline-none" />
-                            <input type="number" name='max' placeholder="Max" className="input max-w-24 input-bordered focus:outline-none" />
+                            <input type="number" name='min' placeholder="Min" className="input max-w-24 input-bordered focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+                            <input type="number" name='max' placeholder="Max" className="input max-w-24 input-bordered focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
                         </div>
                     </form>
                 </div>
