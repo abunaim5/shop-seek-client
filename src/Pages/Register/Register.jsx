@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login-register.svg'
 import useAuth from '../../Hooks/useAuth';
 
@@ -13,7 +14,7 @@ const Register = () => {
 
         createUser(email, password)
             .then(() => {
-                
+
             }).catch((error) => {
                 console.error(error.message);
             })
@@ -23,7 +24,7 @@ const Register = () => {
         <div className="hero min-h-[calc(100vh-68px)]">
             <div className="hero-content flex-col lg:flex-row justify-around">
                 <div className="base:w-full lg:w-1/2">
-                    <img src={loginImg} alt="login image" className='w-[80%] mx-auto' />
+                    <img src={loginImg} alt="login image" className='mx-auto' />
                 </div>
                 <div className="card bg-base-100 sm:w-full lg:w-1/2 shrink-0 shadow-md rounded-md">
                     <h1 className="text-2xl font-bold px-8 pt-8">Register now!</h1>
@@ -53,9 +54,10 @@ const Register = () => {
                             <input type="password" name='password' id='password' placeholder="password" className="input input-bordered rounded-md" autoComplete='password' required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-accent uppercase text-gray-800 rounded-md">Sign up</button>
+                            <button className="btn btn-accent uppercase text-gray-800 rounded-md">Sign Up</button>
                         </div>
                     </form>
+                    <p className='text-center pb-8'>Already have an account? <Link to='/login' className='text-accent'>Login</Link></p>
                 </div>
             </div>
         </div>

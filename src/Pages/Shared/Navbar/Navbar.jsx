@@ -45,7 +45,17 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-3">
                 {
-                    user ? <button className="btn btn-sm btn-accent uppercase rounded-none">Sign Out</button> : <>
+                    user ? <div className="dropdown dropdown-end">
+                        <div tabIndex={0} role="button" className="avatar">
+                            <div className="w-14 rounded-full">
+                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            </div>
+                        </div>
+                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                            <li><a>Profile</a></li>
+                            <li><button className="text-red-600">Logout</button></li>
+                        </ul>
+                    </div> : <>
                         <Link to='/login'><button className="btn btn-sm btn-accent btn-outline uppercase rounded-none">Login</button></Link>
                         <Link to='/register'><button className="btn btn-sm btn-accent uppercase rounded-none text-gray-800">Sign Up</button></Link>
                     </>
