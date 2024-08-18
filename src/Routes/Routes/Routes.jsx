@@ -5,6 +5,7 @@ import Login from "../../Pages/Login/Login";
 import Products from "../../Pages/Products/Products";
 import Register from "../../Pages/Register/Register";
 import ViewDetails from "../../Pages/ViewDetails/ViewDetails";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <ViewDetails />,
+                element: <PrivateRoute><ViewDetails /></PrivateRoute>,
                 loader: async({params}) => await fetch(`https://shop-seek-server.vercel.app/product/${params.id}`)
             }
         ],

@@ -1,4 +1,4 @@
-import { FaFacebookF, FaMinus, FaPinterest, FaPlus, FaWhatsapp } from "react-icons/fa";
+import { FaCartArrowDown, FaFacebookF, FaMinus, FaPinterest, FaPlus, FaWhatsapp } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating'
 
@@ -8,20 +8,23 @@ const ViewDetails = () => {
 
     return (
         <div className="min-h-[calc(100vh-94px)] mt-10">
-            <div className="max-w-[1400px] mx-auto">
-                <div className="flex items-center gap-2 bg-gray-50 px-6 py-3 rounded-full shadow-md">
-                    <p>Share:</p>
-                    <FaFacebookF />
-                    <FaPinterest />
-                    <FaWhatsapp />
+            <div className="max-w-[1400px] mx-auto px-2 mb-20">
+                <div className="flex items-center justify-between bg-gray-50 px-6 py-3 rounded-full shadow-md">
+                    <div className="flex items-center gap-2">
+                        <p>Share:</p>
+                        <FaFacebookF />
+                        <FaPinterest />
+                        <FaWhatsapp />
+                    </div>
+                    <button className="btn btn-circle btn-ghost text-xl"><FaCartArrowDown /></button>
                 </div>
                 <div className="card lg:card-side mt-20">
-                    <figure className="w-1/2">
+                    <figure className="w-full lg:w-1/2">
                         <img
                             src={product?.image}
                             alt="Album" />
                     </figure>
-                    <div className="card-body justify-between w-1/2 gap-6">
+                    <div className="card-body px-0 md:px-6 lg:px-0 justify-between w-full lg:w-1/2 gap-6">
                         <div>
                             <h2 className="card-title text-2xl mb-4 text-accent">{product?.name}</h2>
                             <p>{product?.description}</p>
@@ -35,8 +38,9 @@ const ViewDetails = () => {
                                     readonly
                                 />
                             </div>
-                            <p className="mb-2">Brand: {product?.brand}</p>
-                            <p>Category: {product?.category}</p>
+                            <p>Brand: {product?.brand}</p>
+                            <p className="my-2">Category: {product?.category}</p>
+                            <p>Date: {product?.createdAt}</p>
                             <p className="text-3xl font-medium mt-6">${product?.price}</p>
                         </div>
                         <div className="flex items-center gap-6">
