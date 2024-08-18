@@ -18,7 +18,7 @@ Visit the live site at: [ShopSeek](https://shop-seek.web.app)
 
 - **Frontend**: React.js, daisy UI (for UI components and styling)
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB with Mongoose
+- **Database**: MongoDB
 - **Authentication**: Firebase Authentication (Google, Email/Password)
 
 ## Project Setup
@@ -34,10 +34,12 @@ Visit the live site at: [ShopSeek](https://shop-seek.web.app)
 1. **Clone the frontend repository:**
    ```bash
    git clone <frontend-repo-url>
+   ```
 
 2. **Navigate to the repository:**
    ```bash
    git clone <frontend-repo-url>
+   ```
 
 3. **Install dependencies:**
 
