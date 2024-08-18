@@ -132,7 +132,7 @@ const Products = () => {
         <div className='max-w-[1400px] mx-auto px-2 mb-20'>
             <div className='sm:w-full md:w-1/2 mx-auto my-20'>
                 <form onChange={handleSearch}>
-                    <label className="input input-bordered flex items-center gap-2 rounded-md focus:outline-none">
+                    <label className="input input-bordered focus:outline-0 flex items-center gap-2 rounded-md">
                         <input type="text" name="search" className="grow" placeholder="Search" />
                         <CiSearch />
                     </label>
@@ -148,8 +148,8 @@ const Products = () => {
                     <form onBlur={handlePriceRange}>
                         {/* <p>Price Range:</p> */}
                         <div className="flex gap-2">
-                            <input type="number" name='min' placeholder="Min" className="input max-w-24 input-bordered focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
-                            <input type="number" name='max' placeholder="Max" className="input max-w-24 input-bordered focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+                            <input type="number" name='min' placeholder="Min" className="input max-w-24 input-bordered focus:outline-none focus:border-accent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+                            <input type="number" name='max' placeholder="Max" className="input max-w-24 input-bordered focus:outline-none focus:border-accent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
                         </div>
                     </form>
                 </div>

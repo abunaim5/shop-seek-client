@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
             <div className="card-body flex-row items-center justify-between border-2 border-gray-200 mt-4 rounded-md">
                 <div className='flex-1'>
                     <h2 className="card-title">{product.name}</h2>
-                    <p>${product.price}</p>
+                    <h3>${product.price}</h3>
                     {/* <p>Date: {product.createdAt}</p> */}
                 </div>
                 <div className="divider divider-horizontal" />
