@@ -1,9 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login-register.svg'
 import useAuth from '../../Hooks/useAuth';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
-    const { createUser } = useAuth();
+    const { createUser, updateUserProfile } = useAuth();
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -14,10 +17,14 @@ const Register = () => {
 
         createUser(email, password)
             .then(() => {
-
+                updateUserProfile(name, photo)
+                    .then(() => {
+                        toast.success('Register successfully.');
+                        navigate('/');
+                    }).catch((error) => console.error(error.message));
             }).catch((error) => {
                 console.error(error.message);
-            })
+            });
     };
 
     return (

@@ -1,6 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import { MdMenu } from "react-icons/md";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
     const { user, loading, logoutUser } = useAuth();
@@ -15,7 +17,9 @@ const Navbar = () => {
 
     const handleLogoutUser = () => {
         logoutUser()
-            .then(() => { }).catch((error) => {
+            .then(() => {
+                toast.success('You are signed out.');
+            }).catch((error) => {
                 console.error(error.message);
             });
     };

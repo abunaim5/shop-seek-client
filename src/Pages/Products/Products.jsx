@@ -1,9 +1,16 @@
 import { CiSearch } from "react-icons/ci";
-import ProductCard from "./ProductCard";
+// import ProductCard from "./ProductCard";
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import SelectOption from "../../Components/SelectOption/SelectOption";
 import useProducts from "../../Hooks/useProducts";
+import { Suspense, lazy } from 'react'
+
+const ProductCard = lazy(() => {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(import('./ProductCard')), 1500);
+    });
+});
 
 const Products = () => {
     const [itemsPerPage, setItemsPerPage] = useState(10);
@@ -154,7 +161,14 @@ const Products = () => {
             <div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {
-                        products.map(product => <ProductCard key={product._id} product={product} />)
+                        products.map(product => <Suspense fallback={<div className="flex w-52 flex-col gap-4">
+                            <div className="skeleton h-32 w-full"></div>
+                            <div className="skeleton h-4 w-28"></div>
+                            <div className="skeleton h-4 w-full"></div>
+                            <div className="skeleton h-4 w-full"></div>
+                        </div>} key={product._id}>
+                            <ProductCard product={product} />
+                        </Suspense>)
                     }
                 </div>
             </div>

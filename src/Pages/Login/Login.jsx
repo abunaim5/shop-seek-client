@@ -1,6 +1,8 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login-register.svg'
 import useAuth from '../../Hooks/useAuth';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const { loginUser, loginUserWithGoogle } = useAuth();
@@ -15,6 +17,7 @@ const Login = () => {
 
         loginUser(email, password)
             .then(() => {
+                toast.success('Successfully logged in.');
                 navigate(from, {replace: true});
             }).catch((error) => {
                 console.error(error.message);
@@ -24,6 +27,7 @@ const Login = () => {
     const handleLoginWithGoogle = () => {
         loginUserWithGoogle()
             .then(() => { 
+                toast.success('Successfully logged in.');
                 navigate(from, {replace: true});
              }).catch((error) => {
                 console.error(error.message);
